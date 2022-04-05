@@ -1,0 +1,9 @@
+[Unit]
+Description=My monitor service for checking changes in...
+Wants=my_monitor.timer
+
+[Service]
+ExecStart=/usr/bin/my_scripts/my_monitor.sh
+
+[Install]
+WantedBy=multi-user.target
