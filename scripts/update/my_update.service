@@ -1,0 +1,9 @@
+[Unit]
+Description=My update service for packages and their sources at boot and weekly
+Wants=my_update.timer
+
+[Service]
+ExecStart=/usr/bin/my_scripts/my_update.sh
+
+[Install]
+WantedBy=multi-user.target
