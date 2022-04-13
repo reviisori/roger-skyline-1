@@ -1,8 +1,9 @@
 [Unit]
-Description=My monitor service for checking changes in...
-Wants=my_monitor.timer
+Description=Service to monitor changes
+Wants=rs_monitor.timer
 
 [Service]
+Type=oneshot
 ExecStart=/usr/bin/my_scripts/my_monitor.sh
 
 [Install]

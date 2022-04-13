@@ -1,0 +1,10 @@
+[Unit]
+Description=Update service for packages and their sources at boot / weekly
+Wants=rs_update.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/my_scripts/my_update.sh
+
+[Install]
+WantedBy=multi-user.target

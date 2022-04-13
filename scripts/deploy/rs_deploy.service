@@ -1,0 +1,10 @@
+[Unit]
+Description=Service for deploying html
+Wants=rs_deploy.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/my_scripts/my_deployment.sh
+
+[Install]
+WantedBy=multi-user.target

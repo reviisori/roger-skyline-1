@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for rs_deploy.service
+Requires=rs_deploy.service
+
+[Timer]
+Unit=rs_deploy.service
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

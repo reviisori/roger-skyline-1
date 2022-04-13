@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for rs_update.service
+Requires=rs_update.service
+
+[Timer]
+Unit=rs_update.service
+OnCalendar=Mon 04:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for rs_monitor.service
+Requires=rs_monitor.service
+
+[Timer]
+Unit=rs_monitor.service
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
