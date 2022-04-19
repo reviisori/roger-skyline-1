@@ -1,0 +1,2 @@
+scp -P 4289 workspace/roger-skyline-1/scripts/deploy/to_deploy.html revi@10.11.254.89:~/deploy/
+ssh -t revi@10.11.254.89 -p 4289 'sudo reboot'
